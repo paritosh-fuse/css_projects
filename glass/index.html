@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css"/>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Card</title>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="logo">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="content"> 
+            <h2>01</h2>
+            <h3>One</h3>            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Recusandae autem, saepe at esse nihil ab. Asperiores provident deleniti, 
+                atque distinctio et, neque ipsum dolore sit nihil omnis a aliquid veritatis.
+            </p>
+            <a href="#">Read more...</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="logo">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="content">
+            <h2>02</h2>
+            <h3>Two</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Recusandae autem, saepe at esse nihil ab. Asperiores provident deleniti, 
+                atque distinctio et, neque ipsum dolore sit nihil omnis a aliquid veritatis.
+            </p>
+            <a href="#">Read more...</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="logo">
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="content">
+            <h2>03</h2>
+            <h3>Three</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Recusandae autem, saepe at esse nihil ab. Asperiores provident deleniti, 
+                atque distinctio et, neque ipsum dolore sit nihil omnis a aliquid veritatis.
+            </p>
+            <a href="#">Read more...</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare":0.5
+        });
+    </script> 
+</div>
+</body>
+</html>

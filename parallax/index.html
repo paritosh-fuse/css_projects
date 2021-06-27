@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>  
+    <title>Parallax</title>
+</head>
+<body>
+    <section>
+        <img src="static/moon.png" id="moon">
+        <img src="static/stars.png" id="stars">
+        <img src="static/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Shine</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="static/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec">
+        <h2>Dummy Text</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sapiente id alias, ipsa vitae eius tenetur modi perspiciatis labore. Cum, consequatur exercitationem odit fugit dicta minus corrupti modi ullam dolorum?
+        </p>
+    </div>
+    <script>
+        let moon = document.getElementById('moon')
+        let stars = document.getElementById('stars')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let mountains_front = document.getElementById('mountains_front')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px'
+            mountains_behind.style.top = value * 0.35 + 'px'
+            text.style.marginRight = value * 1.5 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.125 + 'px'
+            moon.style.top = value * 1.125 + 'px'
+        })
+
+    </script>
+</body>
+</html>
